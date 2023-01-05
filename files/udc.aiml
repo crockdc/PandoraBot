@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I'm sorry, I don't understand.</template>
+  </category>
+  
+===============================================================================
+<category>
+<pattern>Hi</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
+
+<category>
+<pattern>Hi *</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
+
+<category>
+<pattern>Hello</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
+<category>
+<pattern>Hello *</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
+
+<category>
+<pattern>sup *</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
+<category>
+<pattern>sup</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
+<category>
+<pattern>howdy</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
+<category>
+<pattern>howdy *</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
+
+<category>
+<pattern>Hey *</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
+
+<category>
+<pattern>Hey</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
+===============================================================================
+       
+<category>
+    <pattern>
+^ career ^
+    </pattern>
+    <template><delay>2</delay>I'm happy to help!<split/><delay>2</delay>I'll 
+    just need a bit of information to better assist you.<split/><delay>2</delay>
+    Are you interested in learning about about some career opportunities for a 
+    Bachelor's Degree in Computer Science?
+   
+    <reply>
+       <text>yes</text>
+       <postback>Begin</postback>
+   </reply>
+   
+    <reply>
+       <text>no</text>
+       <postback>End</postback>
+   </reply>
+   
+   
+</template></category>
+    
+===============================================================================
+<category>
+    <pattern>Begin</pattern>
+    <template><delay>2</delay>I'm happy to help!<split/>
+    <delay>2</delay>
+    Please choose one of the following areas that 
+    interests you most:
+        <card>
+            <image>https://pixabay.com/images/id-1863880/</image>
+            <title></title>
+            <subtitle></subtitle>
+            <button>
+                <text></text>
+                <postback></postback>
+            </button>
+        </card>
+    
+    <button>
+        <text>Data Analysis</text>
+        <postback>data</postback>
+    </button>
+
+    <button>
+        <text>Website Design</text>
+        <postback>web</postback>
+    </button>
+    
+    <button>
+        <text>Networking and Cybersecurity</text>
+        <postback>cyber</postback>
+    </button>
+    
+    <button>
+        <text>Electronics</text>
+        <postback>embedded</postback>
+    </button>
+    
+    <button>
+        <text>All Things Programming</text>
+        <postback>software</postback>
+    </button>
+    
+    <button>
+        <text>I WANT TO SEE THEM ALL!</text>
+        <postback>all</postback>
+    </button>
+    
+    
+    </template>
+</category>
+
+===============================================================================
+
+<category>
+    <pattern>data</pattern>
+    <template><delay>1</delay>You may find a rewarding career becoming a 
+    Data Engineer!</template>
+</category>
+
+<category>
+    <pattern>web</pattern>
+    <template><delay>2</delay></template>
+</category>
+
+<category>
+    <pattern>cyber</pattern>
+    <template><delay>2</delay></template>
+</category>
+
+<category>
+    <pattern>embedded</pattern>
+    <template><delay>2</delay></template>
+</category>
+
+<category>
+    <pattern>software</pattern>
+    <template><delay>2</delay></template>
+</category>
+
+<category>
+    <pattern>all</pattern>
+    <template><delay>2</delay></template>
+</category>
+
+===============================================================================
+<category>
+    <pattern>End</pattern>
+    <template><delay>1</delay>I'm sorry, but I only have career information 
+    for computer science at this time.<split/><delay>2</delay>If you would 
+    like computer science career information just type "computer career", 
+    otherwise it was nice chatting!
+    </template>
+</category>
+
+<category>
+    <pattern>noassistance</pattern>
+    <template><delay>1</delay>No problem!<split/><delay>2</delay>If you need 
+    any career advisement assistance please let me know.</template>
+</category>
+
+</aiml>

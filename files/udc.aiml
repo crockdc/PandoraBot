@@ -2,10 +2,22 @@
 <aiml>
   <category>
     <pattern>*</pattern>
-    <template>I'm sorry, I don't understand.</template>
+    <template><delay>2</delay>I'm sorry, I don't understand.
+    <split/><delay>2</delay>Are you interested in career advisement?
+    <reply>
+        <text>Yes!</text>
+        <postback>career</postback>
+    </reply>
+    <reply>
+        <text>No, thank you.</text>
+        <postback>noassistance</postback>
+    </reply>
+    </template>
   </category>
   
-===============================================================================
+
+
+
 <category>
 <pattern>Hi</pattern>
 <template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
@@ -191,7 +203,132 @@ What brings you in today?
 
 </template></category>
 
-===============================================================================
+<category>
+<pattern>Helo</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
+<category>
+<pattern>Helloo</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
+<category>
+<pattern>Heello</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
+<category>
+<pattern>ello</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
+<category>
+<pattern>hhello</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
+<category>
+<pattern>hhello</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
+<category>
+<pattern>hii</pattern>
+<template><delay>2</delay>Greetings! Welcome to the career advisor chat. 
+Let's begin!<split/><delay>2</delay>
+What brings you in today?
+
+<reply>
+    <text>I'm looking for career advisement!</text>
+    <postback>career</postback>
+</reply>
+
+<reply>
+    <text>I don't need any assistance.</text>
+    <postback>noassistance</postback>
+</reply>
+
+</template></category>
+
        
 <category>
     <pattern>
@@ -211,27 +348,183 @@ What brings you in today?
        <text>no</text>
        <postback>End</postback>
    </reply>
-   
-   
-</template></category>
+    </template>
+</category>
     
-===============================================================================
+    
+    
+    
+    
+
 <category>
-    <pattern>Begin</pattern>
-    <template><delay>2</delay>I'm happy to help!<split/>
-    <delay>2</delay>
-    Please choose one of the following areas that 
+    <pattern>begin</pattern>
+    <template>
+    <delay>2</delay>Please choose one of the following areas that 
     interests you most:
-        <card>
-            <image>https://pixabay.com/images/id-1863880/</image>
-            <title></title>
-            <subtitle></subtitle>
-            <button>
-                <text></text>
-                <postback></postback>
-            </button>
-        </card>
+    <button>
+        <text>Data Analysis</text>
+        <postback>data</postback>
+    </button>
+
+    <button>
+        <text>Website Design</text>
+        <postback>web</postback>
+    </button>
     
+    <button>
+        <text>Networking and Cybersecurity</text>
+        <postback>cyber</postback>
+    </button>
+    
+    <button>
+        <text>Electronics</text>
+        <postback>embedded</postback>
+    </button>
+    
+    <button>
+        <text>All Things Programming Related</text>
+        <postback>software</postback>
+    </button>
+    </template>
+</category>
+
+
+
+
+
+
+<category>
+    <pattern>data</pattern>
+    <template><delay>2</delay>You may find a rewarding career becoming a 
+    Data Engineer! Data engineers implement methods to improve data reliability 
+    and quality. They combine raw information from different sources to create 
+    consistent and machine-readable formats.<split/><delay>4</delay>
+    Check out the following link for more detailed career information:
+    <link>
+        <text>DATA ENGINEER INFO</text>
+        <url>https://resources.workable.com/data-engineer-job-description#:~:text=Data%20engineers%20implement%20methods%20to,for%20predictive%20or%20prescriptive%20modeling.</url>
+    </link>
+    <split/><delay>4</delay>Would you like to view the other career 
+    opportunities?
+    <reply>
+        <text>Yes!</text>
+        <postback>redisplay</postback>
+    </reply>
+    <reply>
+        <text>No, I'm finished.</text>
+        <postback>finished</postback>
+    </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>web</pattern>
+    <template><delay>2</delay>You may find a rewarding career becoming a 
+    Web Developer! A Web Developer is in charge of ensuring websites look good 
+    and function properly. Web developers collaborate with website and graphic 
+    designers, monitor website traffic, troubleshoot website problems when they 
+    arise, and update websites as necessary.<split/><delay>4</delay>
+    Check out the following link for more detailed career information:
+    <link>
+        <text>WEB DEVELOPER INFO</text>
+        <url>https://resources.workable.com/web-developer-job-description#:~:text=A%20Web%20Developer%20is%20in,and%20update%20websites%20as%20necessary.</url>
+    </link>
+    <split/><delay>4</delay>Would you like to view the other career 
+    opportunities?
+    <reply>
+        <text>Yes!</text>
+        <postback>redisplay</postback>
+    </reply>
+    <reply>
+        <text>No, I'm finished.</text>
+        <postback>finished</postback>
+    </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>cyber</pattern>
+    <template><delay>2</delay>You may find a rewarding career becoming a 
+    Cybersecurity Engineer! Cybersecurity engineers identify threats and 
+    vulnerabilities in systems and software, then apply their skills to 
+    developing and implementing high-tech solutions to defend against hacking, 
+    malware and ransomware, insider threats and all types of cybercrime.
+    <split/><delay>4</delay>
+    Check out the following link for more detailed career information:
+    <link>
+        <text>CYBERSECURITY ENGINEER INFO</text>
+        <url>https://onlinedegrees.sandiego.edu/should-you-become-a-cyber-security-engineer/</url>
+    </link>
+    <split/><delay>4</delay>Would you like to view the other career 
+    opportunities?
+    <reply>
+        <text>Yes!</text>
+        <postback>redisplay</postback>
+    </reply>
+    <reply>
+        <text>No, I'm finished.</text>
+        <postback>finished</postback>
+    </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>embedded</pattern>
+    <template><delay>2</delay>You may find a rewarding career becoming an 
+    Embedded Software Engineer! Embedded software is the first layer of code 
+    that runs on a device. Embedded engineers need a deep understanding of the 
+    hardware that the code runs on. An embedded engineer knows the schematics 
+    of hardware and how chip datasheets relate to the code written for them. 
+    Embedded software is usually self-contained and only runs a single program.
+    <split/><delay>4</delay>
+    Check out the following link for more detailed career information:
+    <link>
+        <text>EMBEDDED ENGINEER INFO</text>
+        <url>https://www.freelancermap.com/blog/embedded-software-engineer/</url>
+    </link>
+    <split/><delay>4</delay>Would you like to view the other career 
+    opportunities?
+    <reply>
+        <text>Yes!</text>
+        <postback>redisplay</postback>
+    </reply>
+    <reply>
+        <text>No, I'm finished.</text>
+        <postback>finished</postback>
+    </reply>
+    </template>
+</category>
+
+<category>
+    <pattern>software</pattern>
+    <template><delay>2</delay>You may find a rewarding career becoming a 
+    Software Engineer! A software engineer is a person who applies the 
+    principles of software engineering to design, develop, maintain, test, and 
+    evaluate computer software.<split/><delay>4</delay>
+    Check out the following link for more detailed career information:
+    <link>
+        <text>SOFTWARE ENGINEER INFO</text>
+        <url>https://en.wikipedia.org/wiki/Software_engineering</url>
+    </link>
+    <split/><delay>4</delay>Would you like to view the other career 
+    opportunities?
+    <reply>
+        <text>Yes!</text>
+        <postback>redisplay</postback>
+    </reply>
+    <reply>
+        <text>No, I'm finished.</text>
+        <postback>finished</postback>
+    </reply>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>redisplay</pattern>
+    <template><delay>2</delay>Please choose one of the following areas that 
+    interests you most:
     <button>
         <text>Data Analysis</text>
         <postback>data</postback>
@@ -257,49 +550,9 @@ What brings you in today?
         <postback>software</postback>
     </button>
     
-    <button>
-        <text>I WANT TO SEE THEM ALL!</text>
-        <postback>all</postback>
-    </button>
-    
-    
-    </template>
+   </template>
 </category>
 
-===============================================================================
-
-<category>
-    <pattern>data</pattern>
-    <template><delay>1</delay>You may find a rewarding career becoming a 
-    Data Engineer!</template>
-</category>
-
-<category>
-    <pattern>web</pattern>
-    <template><delay>2</delay></template>
-</category>
-
-<category>
-    <pattern>cyber</pattern>
-    <template><delay>2</delay></template>
-</category>
-
-<category>
-    <pattern>embedded</pattern>
-    <template><delay>2</delay></template>
-</category>
-
-<category>
-    <pattern>software</pattern>
-    <template><delay>2</delay></template>
-</category>
-
-<category>
-    <pattern>all</pattern>
-    <template><delay>2</delay></template>
-</category>
-
-===============================================================================
 <category>
     <pattern>End</pattern>
     <template><delay>1</delay>I'm sorry, but I only have career information 
@@ -314,5 +567,13 @@ What brings you in today?
     <template><delay>1</delay>No problem!<split/><delay>2</delay>If you need 
     any career advisement assistance please let me know.</template>
 </category>
+
+<category>
+    <pattern>finished</pattern>
+    <template><delay>2</delay>It was a pleasure chatting with you. If you need
+    any further career advisement please reach out!</template>
+</category>
+
+
 
 </aiml>
